@@ -4,7 +4,7 @@
 Course: (https://www.udemy.com/modern-html-css-from-the-beginning/) <br>
 Course length: <b>17 hours</b>
 
-This is a front to back JavaScript course for absolutely everybody. It starts with the basic fundamentals and works toward advanced programming WITHOUT relying on frameworks or libraries at all.
+This course is for both beginners and seasoned developers that want to learn how to build responsive websites and user interfaces with modern HTML5 and CSS3+ technologies like Flexbox and CSS Grid.
 
 *This repo is a collection of the work I will be completing for the course listed*
 
