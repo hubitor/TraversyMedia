@@ -14,7 +14,7 @@ This is a front to back JavaScript course for absolutely everybody. It starts wi
 ### Course Outline:
 Section 1: Intro &check; <br>
 Section 2: JavaScript Fundamentals &check; <br>
-Section 3: DOM Manipulation &amp; Events <br>
+Section 3: DOM Manipulation &amp; Events &check; <br>
 Section 4: DOM Projects <br>
 Section 5: Object Oriented JS - ES5 &amp; ES6 <br>
 Section 6: OOP Book List Project <br>
