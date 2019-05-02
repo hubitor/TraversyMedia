@@ -24,3 +24,57 @@ const game = document.querySelector('#game'),
 // Assign UI min & max
 minNum.textContent = min;
 maxNum.textContent = max;
+
+// listen for guess
+guessBtn.addEventListener('click', function() {
+  let guess = parseInt(guessInput.value);
+
+  //validate
+  if (isNaN(guess) || guess < min || guess > max) {
+    setMessage(`Please enter a number between ${min} and ${max}`);
+  }
+
+  // Check if won
+  if (guess === winningNum) {
+    // Disable Input
+    guessInput.disabled = true;
+    // Change border colo
+    guessInput.style.borderColor = 'green';
+    // Set message
+    setMessage(`${winningNum} is correct!, YOU WIN!`, 'green');
+  } else {
+    // wrong number
+    guessesLeft -= 1;
+
+    if (guessesLeft === 0) {
+      // Game over - lost
+
+      // Disable Input
+      guessInput.disabled = true;
+      // Change border colo
+      guessInput.style.borderColor = 'red';
+      // Set message
+      setMessage(`Game Over, you lost. The correct number was ${winningNum}`, 'red');
+    } else {
+      // Game continues
+
+      // Change border colo
+      guessInput.style.borderColor = 'red';
+
+      // clear input
+      guessInput.value = '';
+
+      setMessage(`${guess} is not correct, ${guessesLeft} guesses left`, 'red');
+    }
+  }
+
+});
+
+// Game over
+
+
+// set message
+function setMessage(msg, color) {
+  message.style.color = color;
+  message.textContent = msg;
+}
